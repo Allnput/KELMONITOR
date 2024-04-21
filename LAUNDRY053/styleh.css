@@ -1,0 +1,104 @@
+*{box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 10px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header img {
+  height: 84px;
+  width: auto;
+}
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.header-right {
+  float: right;
+}
+@media screen and (max-width:500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* Topbar */
+.container-fluid {
+  background-color: #007bff; /* blue */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.text-white {
+  color: #fff; /* white */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg-left {
+  text-align: left;
+}
+
+.text-lg-right {
+  text-align: right;
+}
+
+.mb-2, .mb-3, .mb-4, .mb-5, .mb-6, .mb-7, .mb-8, .mb-9, .mb-10 {
+  margin-bottom: 0.5rem; /* adjust as needed */
+}
+
+.mb-lg-0 {
+  margin-bottom: 0; /* remove margin on large screens */
+}
+
+.d-inline-flex {
+  display: inline-flex !important;
+  align-items: center;
+}
+
+.pl-3, .pr-3, .px-3 {
+  padding-left: 0.75rem; /* adjust as needed */
+  padding-right: 0.75rem; /* adjust as needed */
+}
+
+.px-3 {
+  padding-left: 0.75rem; /* adjust as needed */
+  padding-right: 0.75rem; /* adjust as needed */
+}
+
+.py-3 {
+  padding-top: 0.75rem; /* adjust as needed */
+  padding-bottom: 0.75rem; /* adjust as needed */
+}
+
+.col-md-6 {
+  flex: 0 0 50%; /* adjust as needed */
+  max-width: 50%; /* adjust as needed */
+}
+/* Topbar End */
