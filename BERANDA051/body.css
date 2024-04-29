@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0; 
-    background-color: rgb(42, 155, 225); 
+    background-color: #E9C874; 
+    color: white;
 
     
 }
@@ -13,13 +14,17 @@ body {
 }
 
 header {
-    background: #ffffff;
+    background: #ffffff; 
+    color:black; 
     padding: 80px 0;
-    text-align: center;
+    text-align: center; 
+    background-image: url(https://i.pinimg.com/564x/7a/53/6e/7a536eb74e73f6bdec13a72ac981d5b7.jpg);
+    background-size: cover;
 }
 
 header h1 {
     font-size: 36px;
+
 }
 
 header p {
