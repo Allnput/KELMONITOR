@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pemesanan</title>
+    <link rel="stylesheet" href="body.css">
+    
+</head>
+<body>
+    <form action="#" method="post">
+        <h2 style="text-align: center; color: #333;">Formulir Pemesanan</h2>
+        <label for="nama">Nama Lengkap :</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <br><br/>
+
+        <label for="kontak">Kontak :</label>
+        <input type="text" id="kontak" name="kontak" required>
+
+        <br><br/>
+        
+        <label for="barang">Berat Barang</label>
+        <select id="barang" name="barang" required>
+            <option value="">Pilih Berat Kg</option>
+            <option value="1">1 kg</option>
+            <option value="2">2 kg</option>
+            <option value="3">3 kg</option>
+            <option value="4">4 kg</option>
+            <option value="5">5 kg</option>
+            <option value="6">6 kg</option>
+            <option value="7">7 kg</option>
+            <option value="8">8 kg</option>
+            <option value="9">9 kg</option>
+            <option value="10">10 kg</option>
+        </select>
+
+        <br><br/>
+
+        <label for="jumlah">Harga : </label>
+        <input type="number" id="jumlah" name="jumlah" min="10" required>
+
+        <br><br/>
+        
+        <label for="alamat">Alamat Penjemputan :</label>
+        <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+        <br><br/>
+
+        <input type="submit" value="Pesan">
+    </form>
+</body>
+</html>
