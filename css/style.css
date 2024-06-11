@@ -11,6 +11,11 @@
   --body-color: hsl(230, 100%, 98%);
   --container-color: hsl(230, 100%, 97%);
   --border-color: hsl(230, 25%, 80%);
+  --cyan: #17a2b8;
+  --primary: #194376;
+  --secondary: #46C6CE;
+  --success: #28a745;
+  --info: #17a2b8;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -535,5 +540,34 @@ img {
   .footer .footer-center i {
       margin-left: 0px;
   }
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background:url(../img/try2.jpg) no-repeat;
+  background-size: cover;
+background-position: center;
+}
+.home .homegambar h2{
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home .homegambar p{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight:bold;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
