@@ -115,7 +115,11 @@ img {
   z-index: var(--z-modal);
   background-color: hsla(230, 75%, 15%, .1);
   backdrop-filter: blur(24px);
+<<<<<<< HEAD
   -webkit-backdrop-filter: blur(24px);
+=======
+  -webkit-backdrop-filter: blur(24px); /* For safari */
+>>>>>>> a434b3d09ef5eacaefa3379aa011257fc64f91df
   padding: 8rem 1.5rem 0;
   opacity: 0;
   pointer-events: none;
@@ -546,12 +550,19 @@ img {
   display: flex;
   align-items: center;
   min-height: 100vh;
+<<<<<<< HEAD
   background-image: url(../img/try2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+=======
+  background:url(../img/try2.jpg) no-repeat;
+  background-size: cover;
+background-position: center;
+}
+>>>>>>> a434b3d09ef5eacaefa3379aa011257fc64f91df
 .home .homegambar h2{
   font-family: sans-serif;
   text-align: center;
@@ -572,6 +583,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 /* <!--============================ ABOUT US =============================== --> */
 .about-us {
   opacity: 0;
@@ -891,3 +903,6 @@ text-align: center;
   padding-bottom: 5rem;
 }
 /* <!--============================ PROSES END =============================== --> */
+=======
+
+>>>>>>> a434b3d09ef5eacaefa3379aa011257fc64f91df
