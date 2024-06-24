@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+>>>>>>> 168f2c2 (051)
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+<<<<<<< HEAD
             background-image: linear-gradient(to bottom right, #7f7fd5, #86a8e7, #91eae4);
             background-size: cover;
+=======
+            background: url('https://tse1.mm.bing.net/th?id=OIP.Fc2-Dl_iokoym9pX56_IyQHaC9&pid=Api&P=0&h=180') no-repeat center center fixed;
+            background-size: contain;
+>>>>>>> 168f2c2 (051)
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+<<<<<<< HEAD
         }
         .login-container {
             width: 300px;
@@ -32,10 +42,53 @@
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+=======
+            color: #333;
+        }
+        .login-container {
+            width: 350px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .welcome-message {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #555;
+        }
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-container input {
+            width: calc(100% - 40px);
+            padding: 10px 10px 10px 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border 0.3s, background-color 0.3s;
+        }
+        .input-container i {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #aaa;
+        }
+        .input-container input:focus {
+            border-color: #7f7fd5;
+            background-color: #f1f1f1;
+            outline: none;
+>>>>>>> 168f2c2 (051)
         }
         input[type="submit"] {
             width: 100%;
             padding: 10px;
+<<<<<<< HEAD
             margin-top: 10px;
             border: none;
             border-radius: 5px;
@@ -45,17 +98,47 @@
         }
         input[type="submit"]:hover {
             background-color: #45a049;
+=======
+            border: none;
+            border-radius: 5px;
+            background-color: #17a2b8;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #1d221d;
+            transform: scale(1.05);
+>>>>>>> 168f2c2 (051)
         }
     </style>
 </head>
 <body>
     <div class="login-container">
         <h2>Login</h2>
+<<<<<<< HEAD
         <form action="login.php" method="post">
             <input type="text" name="username" placeholder="Username" required><br>
             <input type="password" name="password" placeholder="Password" required><br>
+=======
+        <p class="welcome-message">Selamat datang! Silakan login untuk melanjutkan.</p>
+        <form action="login.php" method="post">
+            <div class="input-container">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+>>>>>>> 168f2c2 (051)
             <input type="submit" value="Login">
         </form>
     </div>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 168f2c2 (051)

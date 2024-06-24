@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir Pemesanan</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="body.css">
     
 </head>
 <body>
     <form action="#" method="post">
+=======
+    <link rel="stylesheet" href="/css/body.css">
+    <script>
+        const serviceOptions = {
+            basic: { price: 800, time: "4 hari" },
+            standard: { price: 15000, time: "2 hari" },
+            premium: { price: 25000, time: "1 jam" }
+        };
+
+        function updatePriceAndTime() {
+            const weightSelect = document.getElementById('barang');
+            const serviceSelect = document.getElementById('service');
+            const priceInput = document.getElementById('jumlah');
+            const timeDisplay = document.getElementById('waktu');
+            
+            const selectedWeight = weightSelect.value;
+            const selectedService = serviceSelect.value;
+
+            if (selectedWeight && selectedService) {
+                const pricePerKg = serviceOptions[selectedService].price;
+                const totalPrice = pricePerKg * selectedWeight;
+                priceInput.value = totalPrice;
+                timeDisplay.textContent = `Waktu: ${serviceOptions[selectedService].time}`;
+            } else {
+                priceInput.value = '';
+                timeDisplay.textContent = '';
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="save_form.php" method="post">
+>>>>>>> 168f2c2 (051)
         <h2 style="text-align: center; color: #333;">Formulir Pemesanan</h2>
         <label for="nama">Nama Lengkap :</label>
         <input type="text" id="nama" name="nama" required>
@@ -20,8 +54,13 @@
 
         <br><br/>
         
+<<<<<<< HEAD
         <label for="barang">Berat Barang</label>
         <select id="barang" name="barang" required>
+=======
+        <label for="barang">Berat Barang :</label>
+        <select id="barang" name="barang" required onchange="updatePriceAndTime()">
+>>>>>>> 168f2c2 (051)
             <option value="">Pilih Berat Kg</option>
             <option value="1">1 kg</option>
             <option value="2">2 kg</option>
@@ -37,10 +76,29 @@
 
         <br><br/>
 
+<<<<<<< HEAD
         <label for="jumlah">Harga : </label>
         <input type="number" id="jumlah" name="jumlah" min="10" required>
 
         <br><br/>
+=======
+        <label for="service">Jenis Layanan :</label>
+        <select id="service" name="service" required onchange="updatePriceAndTime()">
+            <option value="">Pilih Layanan</option>
+            <option value="basic">Basic (Rp 800/kg, 4 hari)</option>
+            <option value="standard">Standard (Rp 15000/kg, 2 hari)</option>
+            <option value="premium">Premium (Rp 25000/kg, 1 jam)</option>
+        </select>
+
+        <br><br/>
+
+        <label for="jumlah">Harga : </label>
+        <input type="number" id="jumlah" name="jumlah" readonly required>
+
+        <br><br/>
+
+        <div id="waktu" style="margin-bottom: 16px;"></div>
+>>>>>>> 168f2c2 (051)
         
         <label for="alamat">Alamat Penjemputan :</label>
         <textarea id="alamat" name="alamat" rows="4" required></textarea>

@@ -1,0 +1,17 @@
+/src
+  /main
+    /java
+      /com
+        /example
+          /orderform
+            Application.java
+            /controller
+              OrderFormController.java
+            /model
+              OrderForm.java
+    /resources
+      /static
+        /css
+          body.css
+      /templates
+        orderform.html

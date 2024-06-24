@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset CSS */
 * {
     margin: 0;
@@ -90,3 +91,47 @@ footer {
 footer p {
     margin: 0;
 }
+=======
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://tse3.mm.bing.net/th?id=OIP.yf3wX8eUHlyYlC80F8P4sgHaEP&pid=Api&P=0&h=180');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="number"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #17a2b8;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        label {
+            color: #333;
+        }
+>>>>>>> 168f2c2 (051)
