@@ -17,44 +17,6 @@ if (navClose) {
     });
 }
 
-/*=============== SEARCH ===============*/
-const search = document.getElementById('search'),
-    searchBtn = document.getElementById('search-btn'),
-    searchClose = document.getElementById('search-close');
-
-/* Search show */
-if (searchBtn) {
-    searchBtn.addEventListener('click', () => {
-        search.classList.add('show-search');
-    });
-}
-
-/* Search hidden */
-if (searchClose) {
-    searchClose.addEventListener('click', () => {
-        search.classList.remove('show-search');
-    });
-}
-
-/*=============== LOGIN ===============*/
-const login = document.getElementById('login'),
-    loginBtn = document.getElementById('login-btn'),
-    loginClose = document.getElementById('login-close');
-
-/* Login show */
-if (loginBtn) {
-    loginBtn.addEventListener('click', () => {
-        login.classList.add('show-login');
-    });
-}
-
-/* Login hidden */
-if (loginClose) {
-    loginClose.addEventListener('click', () => {
-        login.classList.remove('show-login');
-    });
-}
-
 (function ($) {
     "use strict";
 
