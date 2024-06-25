@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir Pemesanan</title>
-    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="css/pemesanan.css">
     
 </head>
 <body>
     <form action="#" method="post">
-    <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="css/bodyy.css">
     <script>
         const serviceOptions = {
             basic: { price: 800, time: "4 hari" },
@@ -30,7 +30,7 @@
                 const pricePerKg = serviceOptions[selectedService].price;
                 const totalPrice = pricePerKg * selectedWeight;
                 priceInput.value = totalPrice;
-                timeDisplay.textContent = `Waktu: ${serviceOptions[selectedService].time}`;
+                timeDisplay.textContent = Waktu : ${serviceOptions[selectedService].time};
             } else {
                 priceInput.value = '';
                 timeDisplay.textContent = '';
@@ -40,7 +40,6 @@
 </head>
 <body>
     <form action="save_form.php" method="post">
->>>>>>> 168f2c2 (051)
         <h2 style="text-align: center; color: #333;">Formulir Pemesanan</h2>
         <label for="nama">Nama Lengkap :</label>
         <input type="text" id="nama" name="nama" required>
@@ -51,14 +50,9 @@
         <input type="text" id="kontak" name="kontak" required>
 
         <br><br/>
-        
-<<<<<<< HEAD
         <label for="barang">Berat Barang</label>
         <select id="barang" name="barang" required>
-=======
         <label for="barang">Berat Barang :</label>
-        <select id="barang" name="barang" required onchange="updatePriceAndTime()">
->>>>>>> 168f2c2 (051)
             <option value="">Pilih Berat Kg</option>
             <option value="1">1 kg</option>
             <option value="2">2 kg</option>
@@ -73,13 +67,10 @@
         </select>
 
         <br><br/>
-
-<<<<<<< HEAD
         <label for="jumlah">Harga : </label>
         <input type="number" id="jumlah" name="jumlah" min="10" required>
 
         <br><br/>
-=======
         <label for="service">Jenis Layanan :</label>
         <select id="service" name="service" required onchange="updatePriceAndTime()">
             <option value="">Pilih Layanan</option>
@@ -96,14 +87,14 @@
         <br><br/>
 
         <div id="waktu" style="margin-bottom: 16px;"></div>
->>>>>>> 168f2c2 (051)
-        
         <label for="alamat">Alamat Penjemputan :</label>
         <textarea id="alamat" name="alamat" rows="4" required></textarea>
 
         <br><br/>
-
+<a href="index.html">
         <input type="submit" value="Pesan">
+    </a>
     </form>
+    
 </body>
 </html>
